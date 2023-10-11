@@ -16,8 +16,6 @@ public class Main {
     }
 
     private static void studentController(StudentDao studentDao) {
-//        studentDao.createStudent(new Student("Brian"));
-
         var getStudent = studentDao.getStudent(0);
         if (getStudent.getName() == null) {
             System.out.printf("rollNo %s has not been found in the database\n",
